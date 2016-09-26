@@ -11,24 +11,24 @@ public class UserTest {
 	
 	@Before
     public void before() {
-        j = new User(1,"Jose Maria","Moreno");
+        j = new User(1,"Jose","Moreno");
     }
 
 	@Test
 	public void testUser() {
 		assertEquals(1, j.getNumber());
-		assertEquals("Jose Maria", j.getName());
+		assertEquals("Jose", j.getName());
 		assertEquals("Moreno", j.getFamilyName());
 	}
 
 	@Test
 	public void testGetNumber() {
-		assertEquals("Jose Maria", j.getName());
+		assertEquals("Jose", j.getName());
 	}
 
 	@Test
 	public void testGetName() {
-		assertEquals("Jose Maria", j.getName());
+		assertEquals("Jose", j.getName());
 	}
 
 	@Test
@@ -38,7 +38,7 @@ public class UserTest {
 
 	@Test
 	public void testFullName() {
-		assertEquals("Jose Maria Moreno", j.fullName());
+		assertEquals("Jose Moreno", j.fullName());
 	}
 
 	@Test
