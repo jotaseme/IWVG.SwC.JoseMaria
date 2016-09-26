@@ -7,41 +7,43 @@ import org.junit.Test;
 
 public class UserTest {
 	
-	private User J;
+	private User j;
 	
 	@Before
     public void before() {
-        J = new User(1,"Jose Maria","Moreno");
+        j = new User(1,"Jose Maria","Moreno");
     }
 
 	@Test
 	public void testUser() {
-		fail("Not yet implemented");
+		assertEquals(1, j.getNumber());
+		assertEquals("Jose Maria", j.getName());
+		assertEquals("Moreno", j.getFamilyName());
 	}
 
 	@Test
 	public void testGetNumber() {
-		fail("Not yet implemented");
+		assertEquals("Jose Maria", j.getName());
 	}
 
 	@Test
 	public void testGetName() {
-		fail("Not yet implemented");
+		assertEquals("Jose Maria", j.getName());
 	}
 
 	@Test
 	public void testGetFamilyName() {
-		fail("Not yet implemented");
+		assertEquals("Moreno", j.getFamilyName());
 	}
 
 	@Test
 	public void testFullName() {
-		fail("Not yet implemented");
+		assertEquals("Jose Maria Moreno", j.fullName());
 	}
 
 	@Test
 	public void testInitials() {
-		fail("Not yet implemented");
+		assertEquals("J.", j.initials());
 	}
 
 }
