@@ -38,6 +38,7 @@ public class Point {
     }
     public void modifyX(int valor){
         this.x = valor;
+        
     }
     
     @Override
