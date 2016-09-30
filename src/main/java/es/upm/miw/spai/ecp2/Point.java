@@ -36,7 +36,10 @@ public class Point {
         this.x -= origin.getX();
         this.y -= origin.getY();
     }
-
+    public void modifyX(int valor){
+        this.x = valor;
+    }
+    
     @Override
     public String toString() {
         return "Point[" + x + "," + y + "]";
