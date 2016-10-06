@@ -63,4 +63,11 @@ public class Fraction {
     public boolean isPropia(){
         return this.numerator < this.denominator;
     }
+    
+    public boolean isEquivalente(Fraction fa, Fraction fb){
+        if (fa.numerator * fb.denominator == fa.denominator * fb.numerator)
+            return true;
+        else
+            return false;       
+    }
 }
