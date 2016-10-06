@@ -9,11 +9,12 @@ import es.upm.miw.spai.ecp2.Fraction;;
 
 public class FractionTest {
 	
-	private Fraction f;
-
+	private Fraction f;	
+	
     @Before
     public void before() {
         f = new Fraction(4, 2);
+       
     }
 
 
@@ -50,4 +51,10 @@ public class FractionTest {
         assertFalse(f.isPropia());
     }
 
+	@Test
+    public void testIsEquivalente() {
+	    Fraction instance = new Fraction();
+	    Fraction f2 = new Fraction(10,5);
+        assertEquals(true,instance.isEquivalente(f, f2));
+    }
 }
