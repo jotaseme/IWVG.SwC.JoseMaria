@@ -64,8 +64,8 @@ public class Fraction {
         return this.numerator < this.denominator;
     }
     
-    public boolean isEquivalente(int n1, int d2){
-        if (this.numerator * d2 == this.denominator * n1)
+    public boolean isEquivalente(Fraction fa, Fraction fb){
+        if (fa.numerator * fb.denominator == fa.denominator * fb.numerator)
             return true;
         else
             return false;       
