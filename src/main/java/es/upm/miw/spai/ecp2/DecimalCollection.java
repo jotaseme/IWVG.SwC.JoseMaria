@@ -34,5 +34,13 @@ public class DecimalCollection {
         }
         return higher;
     }
-
+    
+    public double lower() {
+        double lower = this.collection.get(0);
+        for (double value:this.collection){
+            if (value < lower)
+                lower = value;
+        }
+        return lower;
+    }
 }
