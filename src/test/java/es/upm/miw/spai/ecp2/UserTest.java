@@ -6,13 +6,13 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class UserTest {
-	
+
 	private User j;
-	
+
 	@Before
-    public void before() {
-        j = new User(1,"Jose","Moreno");
-    }
+	public void before() {
+		j = new User(1, "Jose", "Moreno");
+	}
 
 	@Test
 	public void testUser() {
